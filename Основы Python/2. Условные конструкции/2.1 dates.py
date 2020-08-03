@@ -1,7 +1,13 @@
 month = input("Введите месяц рождения: ");
 month = month.lower();
-date = int(input("Введите день рождения: "));
+date = input("Введите день рождения: "));
 
+try:
+    date = int(date);
+    print("Хорошо")
+except:
+    print("Данные введены не корректно")
+    
 if month == 'март':
   sign = 'овен' if (date >= 21) else 'рыбы'
 elif month == 'апрель':
